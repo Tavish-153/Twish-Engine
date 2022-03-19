@@ -12,7 +12,6 @@ using StringTools;
 
 class DiscordClient
 {
-	public static var isInitialized:Bool = false;
 	public function new()
 	{
 		trace("Discord Client starting...");
@@ -42,10 +41,10 @@ class DiscordClient
 	static function onReady()
 	{
 		DiscordRpc.presence({
-			details: "In the Menus",
+			details: "Im Twish In the Menus",
 			state: null,
 			largeImageKey: 'icon',
-			largeImageText: "Psych Engine"
+			largeImageText: "Twish Engine"
 		});
 	}
 
@@ -66,7 +65,6 @@ class DiscordClient
 			new DiscordClient();
 		});
 		trace("Discord Client initialized");
-		isInitialized = true;
 	}
 
 	public static function changePresence(details:String, state:Null<String>, ?smallImageKey : String, ?hasStartTimestamp : Bool, ?endTimestamp: Float)

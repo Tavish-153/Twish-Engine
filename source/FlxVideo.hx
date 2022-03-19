@@ -123,7 +123,7 @@ class FlxVideo extends FlxBasic {
 	
 	function onVLCError()
 		{
-			trace("An error has occured while trying to load the video.\nPlease, check if the file you're loading exists.");
+			trace("An error has occured while trying to load the video.\nPlease, check if the file you're loading exists(means ur vid is not loaded or its missing)");
 			if (finishCallback != null) {
 				finishCallback();
 			}
